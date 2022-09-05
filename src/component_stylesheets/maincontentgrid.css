@@ -1,0 +1,173 @@
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.egg img {
+    width: 100%;
+    min-height: 100%;
+
+}
+
+.cup img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20% 0 20%;
+}
+
+.text h1 {
+    font-size: 300%;
+}
+
+.text p {
+    opacity: 50%;
+    margin-top: 5%;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.text button {
+    position: relative;
+    width: 40%;
+    border: none;
+    background-color: transparent;
+    font-size: 150%;
+}
+
+.underline-div {
+    background-color: var(--pry-yellow);
+    height: 30%;
+    width: 40%;
+    border-radius: 5rem;
+    transform: translate(0, 210%);
+    opacity: 30%;
+    color: transparent;
+}
+
+.btn-div:hover .underline-div {
+    opacity: 100%;
+}
+
+.audience .underline-div {
+    background-color: var(--pry-soft-red);
+    height: 30%;
+    width: 40%;
+    border-radius: 5rem;
+    transform: translate(0, 210%);
+    opacity: 30%;
+}
+
+.hybrid-box {
+    background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.hybrid-box:last-child {
+    background-image: url(../assets/images/desktop/image-photography.jpg);
+}
+
+.hybrid-box h1 {
+    text-align: center;
+    bottom: 10rem;
+    font-size: 300%;
+    opacity: 70%;
+}
+
+.hybrid-box p {
+    text-align: center;
+    bottom: 6rem;
+    font-size: 150%;
+    opacity: 70%;
+}
+
+.absolute {
+    position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+    
+
+    .main-content-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .text {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 0 10% 0 10%;
+    }
+
+    .btn-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .underline-div {
+        height: 50%;
+    }
+
+    .hybrid-box h1 {
+        text-align: center;
+        bottom: 5rem;
+        font-size: 300%;
+        opacity: 70%;
+    }
+
+    .hybrid-box p {
+        text-align: center;
+        bottom: 3rem;
+        font-size: 150%;
+        opacity: 70%;
+    }
+
+   
+
+    
+
+    .audience .underline-div {
+        background-color: var(--pry-soft-red);
+        height: 30%;
+        width: 40%;
+        border-radius: 5rem;
+        transform: translate(0, 195%);
+        opacity: 100%;
+        color: var(--pry-soft-red);
+    }
+
+    .underline-div {
+        background-color: var(--pry-yellow);
+        height: 30%;
+        width: 40%;
+        border-radius: 5rem;
+        transform: translate(0, 195%);
+        opacity: 100%;
+        color: var(--pry-yellow);
+    }
+}
+
+/* .underline-div {
+    background-color: aqua;
+    height: 2%;
+    width: 25%;
+    border-radius: 5em;
+    transform: translate(0, 200%);
+    opacity: 50%;
+} */
